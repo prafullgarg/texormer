@@ -1,0 +1,16 @@
+.theme {
+    width: 20px;
+    height: 20px;
+    border: 2px;
+    border-radius: 100%;
+}
+
+
+#col1 {
+    background-color: aqua;
+}
+
+#col2 {background-color: green;}
+
+#col3 { background-color:hotpink}
+
