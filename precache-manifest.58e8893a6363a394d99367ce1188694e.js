@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4a514ba849e84fec5dad",
+    "revision": "ffe71b651150c9ee9ce9",
     "url": "/texormer/static/css/main.d7576955.chunk.css"
   },
   {
-    "revision": "4a514ba849e84fec5dad",
-    "url": "/texormer/static/js/main.4a514ba8.chunk.js"
+    "revision": "ffe71b651150c9ee9ce9",
+    "url": "/texormer/static/js/main.ffe71b65.chunk.js"
   },
   {
     "revision": "7ab2393a9ad8c2b58dcd",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/texormer/static/js/runtime~main.27a4bfe2.js"
   },
   {
-    "revision": "64f3b9d248cd3b26881376b2e201a48a",
+    "revision": "9862dfac069ea3fe7f97f428369ea81a",
     "url": "/texormer/index.html"
   }
 ];
