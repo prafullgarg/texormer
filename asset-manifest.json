@@ -1,15 +1,15 @@
 {
-  "main.css": "/texormer/static/css/main.d7576955.chunk.css",
-  "main.js": "/texormer/static/js/main.ffe71b65.chunk.js",
-  "main.js.map": "/texormer/static/js/main.ffe71b65.chunk.js.map",
+  "main.css": "/texormer/static/css/main.c97a76a5.chunk.css",
+  "main.js": "/texormer/static/js/main.fca73243.chunk.js",
+  "main.js.map": "/texormer/static/js/main.fca73243.chunk.js.map",
   "static/js/1.7ab2393a.chunk.js": "/texormer/static/js/1.7ab2393a.chunk.js",
   "static/js/1.7ab2393a.chunk.js.map": "/texormer/static/js/1.7ab2393a.chunk.js.map",
   "static/js/2.946d8365.chunk.js": "/texormer/static/js/2.946d8365.chunk.js",
   "static/js/2.946d8365.chunk.js.map": "/texormer/static/js/2.946d8365.chunk.js.map",
   "runtime~main.js": "/texormer/static/js/runtime~main.27a4bfe2.js",
   "runtime~main.js.map": "/texormer/static/js/runtime~main.27a4bfe2.js.map",
-  "static/css/main.d7576955.chunk.css.map": "/texormer/static/css/main.d7576955.chunk.css.map",
+  "static/css/main.c97a76a5.chunk.css.map": "/texormer/static/css/main.c97a76a5.chunk.css.map",
   "index.html": "/texormer/index.html",
-  "precache-manifest.58e8893a6363a394d99367ce1188694e.js": "/texormer/precache-manifest.58e8893a6363a394d99367ce1188694e.js",
+  "precache-manifest.cbdb397438a0df6801a4f1dde7a1a0b6.js": "/texormer/precache-manifest.cbdb397438a0df6801a4f1dde7a1a0b6.js",
   "service-worker.js": "/texormer/service-worker.js"
 }
