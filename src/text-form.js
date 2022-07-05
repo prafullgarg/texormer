@@ -32,8 +32,7 @@ export default function TextForm(props) {
 
   };
   const handleCopy = () => {
-    var copy = document.getElementById("myBox");
-    navigator.clipboard.writeText(copy.value);
+    navigator.clipboard.writeText(text);
     props.showAlert("Text is copied to the clipboard","success")
 
   };
@@ -83,7 +82,6 @@ export default function TextForm(props) {
           onClick={clear}
           style={{ color: props.mode === "light" ? "black" : "white" }}
           disabled={text.length===0}
-
         >
           Clear Text
         </button>
@@ -115,13 +113,13 @@ export default function TextForm(props) {
         <h1>Text Description</h1>
         <p>
           <strong>
-            Number of words: {text.split(" ").filter((element)=>{return element.length!==0}).length} | Number of
+            Number of words: {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} | Number of
             charachters: {text.length}
           </strong>
         </p>
         <hr />
         <h6>
-          Time required to read: {text.split(" ").filter((element)=>{return element.length!==0}).length * 0.811}{" "}
+          Time required to read: {text.split(/\s+/).filter((element)=>{return element.length!==0}).length * 0.811}{" "}
           minutes
         </h6>
         <hr />
