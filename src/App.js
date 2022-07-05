@@ -4,7 +4,7 @@ import TextForm from "./text-form";
 import About from "./About.js";
 import React, { useState } from "react";
 import Alert from "./Alert.js";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -33,26 +33,17 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar
-          title="Texormer"
-          about="About"
-          mode={mode}
-          toggleMode={toggleMode}
-        />
-        <Alert alert={alert} />
-        <div className="container my-3">
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route
-              path="/"
-              element={
-                <TextForm id="text-form" mode={mode} showAlert={showAlert} />
-              }
-            />
-          </Routes>
-        </div>
-      </Router>
+      <Navbar
+        title="Texormer"
+        about="About"
+        mode={mode}
+        toggleMode={toggleMode}
+      />
+      <Alert alert={alert} />
+      <div className="container my-3">
+        <TextForm id="text-form" mode={mode} showAlert={showAlert} />
+        <About/>
+      </div>
     </>
   );
 }
