@@ -24,7 +24,7 @@ export default function About(props) {
               aria-controls="collapseOne"
               style={mode}
             >
-              Upper
+            <strong>Brief</strong>
             </button>
           </h2>
           <div
@@ -35,7 +35,8 @@ export default function About(props) {
             style={mode}
           >
             <div className="accordion-body" style={mode}>
-              Upper button converts text to upper-case.
+            Texormer is an text transformation single page web application which allow facilities to manipulate text.
+            Its very easy to use and gives friendly user experience.
             </div>
           </div>
         </div>
@@ -50,7 +51,7 @@ export default function About(props) {
               aria-controls="collapseTwo"
               style={mode}
             >
-              Lower
+              <strong>Features</strong>
             </button>
           </h2>
           <div
@@ -61,7 +62,13 @@ export default function About(props) {
             style={mode}
           >
             <div className="accordion-body" style={mode}>
-              Lower button converts text to lower-case.
+              <ul>
+                <li>Uppercase to lowercase converter</li>
+                <li>Lowercase to uppercase converter</li>
+                <li>Text can be copied to clipboard in single click</li>
+                <li>Extra spaces can be removed just in a flash from text</li>
+                <li>Text can be removed from text area in single click</li>
+              </ul> 
             </div>
           </div>
         </div>
@@ -76,7 +83,7 @@ export default function About(props) {
               aria-controls="collapseThree"
               style={mode}
             >
-              Clear
+            <strong>compatibility</strong>
             </button>
           </h2>
           <div
@@ -87,7 +94,7 @@ export default function About(props) {
             style={mode}
           >
             <div className="accordion-body" style={mode}>
-              Clear button removes the written text.
+            Texormer is compatibale with all the modern browsers like firefox,google chrome, brave, apple safari, microsoft edge and so on.
             </div>
           </div>
         </div>
