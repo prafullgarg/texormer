@@ -57,47 +57,55 @@ export default function TextForm(props) {
             cols="100"
             rows="10"
             style={{
-              backgroundColor: props.mode === "light" ? "white" : "grey",
+              backgroundColor: props.mode === "light" ? "white" : "# 144677",
               color: props.mode === "light" ? "black" : "white",
             }}
           ></textarea>
         </div>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={upper}
           style={{ color: props.mode === "light" ? "black" : "white" }}
+          disabled={text.length===0}
         >
           Uppercase
         </button>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={lower}
           style={{ color: props.mode === "light" ? "black" : "white" }}
-        >
+          disabled={text.length===0}
+          >
           Lowercase
         </button>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={clear}
           style={{ color: props.mode === "light" ? "black" : "white" }}
+          disabled={text.length===0}
+
         >
           Clear Text
         </button>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleExtraSpace}
           style={{ color: props.mode === "light" ? "black" : "white" }}
+          disabled={text.length===0}
+
         >
           Remove extra space
         </button>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-1"
           onClick={handleCopy}
           style={{ color: props.mode === "light" ? "black" : "white" }}
+          disabled={text.length===0}
+
         >
           Copy Text
         </button>
-        {/* <button className="btn btn-primary mx-1" onClick={handlePast}> Past Text</button> */}
+        {/* <button className="btn btn-primary mx-1 my-1" onClick={handlePast}> Past Text</button> */}
         <hr />
       </div>
       <div
@@ -107,13 +115,13 @@ export default function TextForm(props) {
         <h1>Text Description</h1>
         <p>
           <strong>
-            Number of words: {text.split(" ").length - 1} | Number of
+            Number of words: {text.split(" ").filter((element)=>{return element.length!==0}).length} | Number of
             charachters: {text.length}
           </strong>
         </p>
         <hr />
         <h6>
-          Time required to read: {text.split(" ").length * 0.811 - 0.811}{" "}
+          Time required to read: {text.split(" ").filter((element)=>{return element.length!==0}).length * 0.811}{" "}
           minutes
         </h6>
         <hr />

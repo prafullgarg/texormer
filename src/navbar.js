@@ -21,9 +21,7 @@ export default function Navbar(props) {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          ></button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -37,29 +35,27 @@ export default function Navbar(props) {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="Themes">
-          <label
-            htmlFor="theme"
-            style={{
-              width: "9em",
-              color: props.mode === "light" ? "black" : "white",
-            }}
-          >
-            Color Themes
-          </label>
-          <button type="button" className="theme" id="col1"></button>
-          <button type="button" className="theme" id="col2"></button>
-          <button type="button" className="theme" id="col3"></button>
-        </div>
-        <div
+            {/* <div className="Themes">
+              <label
+                htmlFor="theme"
+                style={{
+                  width: "9em",
+                  color: props.mode === "light" ? "black" : "white",
+                }}
+              >
+                Color Themes
+              </label>
+              <button type="button" className="theme" id="col1"></button>
+              <button type="button" className="theme" id="col2"></button>
+              <button type="button" className="theme" id="col3"></button>
+            </div> */}
+            <div
           className={`form-check form-switch text-${
             props.mode === "light" ? "dark" : "light"
           }`}
         >
           <input
-            className="form-check-input mx-2"
+            className="form-check-input "
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
@@ -69,6 +65,8 @@ export default function Navbar(props) {
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
             {`Enable ${props.mode === "light" ? "dark" : "light"} Mode`}
           </label>
+        </div>
+          </div>
         </div>
       </nav>
     </>

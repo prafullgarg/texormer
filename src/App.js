@@ -42,7 +42,7 @@ function App() {
       <Alert alert={alert} />
       <div className="container my-3">
         <TextForm id="text-form" mode={mode} showAlert={showAlert} />
-        <About/>
+        <About mode={mode}/>
       </div>
     </>
   );

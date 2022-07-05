@@ -1,33 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function About() {
-  const [modebtn, setModeBtn] = useState("Enable Dark Mode");
-  const [mode, setMode] = useState({
-    color: "black",
-    backgroundColor: "white",
-  });
-
-  const changeMode = () => {
-    if (mode.color === "white") {
-      setMode({
-        color: "black",
-        backgroundColor: "white",
-      });
-      setModeBtn("Enable dark mode");
-    } else {
-      setMode({
-        color: "white",
-        backgroundColor: "black",
-      });
-      setModeBtn("Enable light mode");
-    }
+export default function About(props) {
+  const mode = {
+    color: props.mode === "light" ? "black" : "white",
+    backgroundColor: props.mode === "light" ? "white" : "#2C3639",
   };
   return (
     <div className="container" style={mode}>
       <h2>About Texomer</h2>
       <p>
         This is an web application which provides functionalities to transform
-        text and return text related information.{" "}
+        text and return text related information.
       </p>
       <div className="accordion" id="accordionExample" style={mode}>
         <div className="accordion-item" style={mode}>
@@ -108,11 +91,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container" style={mode}>
-        <button className="btn btn-primary my-3" onClick={changeMode}>
-          {modebtn}
-        </button>
       </div>
     </div>
   );
