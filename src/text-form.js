@@ -107,12 +107,12 @@ export default function TextForm(props) {
         <h1>Text Description</h1>
         <p>
           <strong>
-            Number of words:{" "}
+            Number of words:
             {
               text.split(/\s+/).filter((element) => {
                 return element.length !== 0;
               }).length
-            }{" "}
+            }
             | Number of charachters: {text.length}
           </strong>
         </p>
