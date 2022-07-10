@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/texormer/precache-manifest.2fa73ac509feb4938656e4887e634352.js"
+  "/texormer/precache-manifest.6c7346f3889ccbcb08ac20a7902a07dd.js"
 );
 
 workbox.clientsClaim();
